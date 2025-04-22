@@ -29,6 +29,8 @@ Change the folder:
 ```bash
 cd ME700_Assignment4Part2
 ```
+
+![Alt Text](figures/P1_analytical_vs_num.png)
 Activate fenicsx-env:
 ```bash
 conda activate fenicsx-env
