@@ -29,10 +29,11 @@ Change the folder:
 ```bash
 cd ME700_Assignment4Part2
 ```
-
-![Alt Text](figures/P1_analytical_vs_numerical.png)
 Activate fenicsx-env:
 ```bash
 conda activate fenicsx-env
 ```
 **Note:** If you are running into some memory related error then try relaunching the server after closing the session.
+
+
+![Alt Text](figures/P1_analytical_vs_numerical.png)
