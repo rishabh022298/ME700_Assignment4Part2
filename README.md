@@ -30,7 +30,7 @@ Change the folder:
 cd ME700_Assignment4Part2
 ```
 
-![Alt Text](figures/P1_analytical_vs_num.png)
+![Alt Text](figures/P1_analytical_vs_numerical.png)
 Activate fenicsx-env:
 ```bash
 conda activate fenicsx-env
