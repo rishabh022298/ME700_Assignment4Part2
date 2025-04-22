@@ -34,5 +34,3 @@ Activate fenicsx-env:
 conda activate fenicsx-env
 ```
 **Note:** If you are running into some memory related error then try relaunching the server after closing the session.
-
-Refresh the terminal to check the deformation.gif.
