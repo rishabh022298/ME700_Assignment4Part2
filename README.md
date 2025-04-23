@@ -70,7 +70,8 @@ python p3_poor_mesh.py
 
 ### Thermal Expansion with Linear Elasticity
 User can refer to Theory of Elasticity by Timoshenko and Goodier. The following theory was derived from the third edition of the same book (p 442).
-Axial strains:
+
+Now, axial strains:
 
 $$e_{xx} = \epsilon_{xx} + \alpha\Delta T$$
 
