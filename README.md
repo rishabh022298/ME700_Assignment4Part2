@@ -64,4 +64,21 @@ Script for second example using poor mesh can be found [here](https://github.com
 python p3_poor_mesh.py
 ```
 
+**Note:** Please make sure to referesh "EXPLORER" to check out the plots and gifs that are generated after running the scripts.
+
+## Theory and Results
+
+### Thermal Expansion with Linear Elasticity
+User can refer to Theory of Elasticity by Timoshenko and Goodier. The following theory was derived from the third edition of the same book (p 442).
+Axial strains:
+
+$$e_{xx} = \epsilon_{xx} + \alpha\Delta T$$
+
+here:
+- $e_{xx}$ = Total strain in $x$ (axial) direction.
+- $\epsilon_{xx}$ = Strain due to elasticity.
+- $\alpha$ = coefficient of thermal expansion.
+- $\Delta T$ = change in temperature. 
+
+
 ![Alt Text](figures/P1_analytical_vs_numerical.png)
