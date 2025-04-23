@@ -132,8 +132,23 @@ For h-refinement study, the lateral part of the domain was discretized into 5*5 
 
 ![h_refinement](figures/P2_h_refinement.png)
 
+It can be seen that the result starts converging very close to the analytical result as the mesh gets finer.
+
 For p-refinement study, two element types with degree 1 and 2 were used
 - Hexahedron element
 - Tetrahedron element
 
 ![p_refinement](figures/P2_p_refinement.png)
+
+It can be seen that the result gets closer to the analytical solution as the degree of element is increased. The change is much more prominent for tetrahedron element as compared to hexahedron.
+
+#### Failure
+
+Let's get back to the equation $\frac{\partial u_{x}}{\partial x} = \alpha\Delta T$. Integrating both sides gives:
+
+$$u_x = \alpha\Delta T x + C$$
+
+Where $C$ is the constant of integration. FEniCS doesn't handle $C$ very well.
+
+
+![free_boundaries](figures/P3_free_boundaries_axial_displacement_comparison.png)
