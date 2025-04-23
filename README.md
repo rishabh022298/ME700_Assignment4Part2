@@ -80,5 +80,21 @@ here:
 - $\alpha$ = coefficient of thermal expansion.
 - $\Delta T$ = change in temperature. 
 
+Now, $e_{xx}$ can be related to displacement (in linear elasticity) as:
+
+$$e_{xx} = \frac{\partial u_x}{\partial x}$$
+
+where:
+- $u_x$ is the displacement in $x$ direction
+
+Since the problems implemented in the scripts are related to free expansion, therefore
+
+$$\epsilon_{xx} = 0$$
+
+Combining all three equations from above, we get:
+
+$$\frac{\partial u_x}{\partial x} = \alpha\Delta T$$
+
+Integrating both sides with respect to $x$ gives the displacement along axial ($x$) direction.
 
 ![Alt Text](figures/P1_analytical_vs_numerical.png)
