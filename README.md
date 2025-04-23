@@ -144,11 +144,25 @@ It can be seen that the result gets closer to the analytical solution as the deg
 
 #### Failure
 
-Let's get back to the equation $\frac{\partial u_{x}}{\partial x} = \alpha\Delta T$. Integrating both sides gives:
+We are trying to look at free expansion. But up until a boundary was fixed to simulate the system. Let's remove that boundary and get back to the equation $\frac{\partial u_{x}}{\partial x} = \alpha\Delta T$. Integrating both sides gives:
 
 $$u_x = \alpha\Delta T x + C$$
 
-Where $C$ is the constant of integration. FEniCS doesn't handle $C$ very well.
+Where $C$ is the constant of integration. FEniCS doesn't handle $C$ very well. For example, if we remove the fixed boundary condition at one end, we see:
 
 
 ![free_boundaries](figures/P3_free_boundaries_axial_displacement_comparison.png)
+
+Now, this one curve can be explained in one of the two ways:
+- The bar expanded symmetrically so we have expansion in both directions and hence negative and positive displacements. Or,
+- There were rigid body displacements.
+
+Both of these explanations are fine for understanding, but imagine if the temperature field or the body itself was not symmetric then it would be really hard to predict what actually happened. This would also lead to not only rigid body displacements but also rigid body rotations. Now imagine if we are solving something which expands over multiple time steps. Then it will be really hard to keep track of those symmetrical or asymmetrical expansions or rigid body movements or both. So, here it's not the case that FEniCS fails to solve the system or doesn't converges, but it fails to identify one of the simplest issue that may arise while solving the problems that doesn't have prescribed Dirichlet boundary conditions.
+
+There are a couple of ways to get around it:
+- Fix some nodes which you expect will have least amount of effect on the solution.
+- Introduce [Lagrange multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier) as a penalty for rigid body movements.
+
+Similarly, if we look at the expression $$u_x = \alpha\Delta T x$$, which seems so easy to access but it still requires a finer mesh to generate results which are acceptable. For e.g, if poor mesh is used, we get something like this:
+
+![poor_mesh](figures/P3_poor_mesh_axial_displacement_comparison.png)
