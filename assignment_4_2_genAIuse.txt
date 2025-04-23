@@ -1,0 +1,6 @@
+Help from GPT 4-o was used to write plotting functions for:
+1. p1_analytical_vs_num.py
+2. p3_free_boundaries.py
+3. p3_poor_mesh.py
+
+GPT 4-o was also used to check which element type can be used for p refinement study apart from hexahedron
