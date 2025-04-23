@@ -42,27 +42,38 @@ This can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2
 ```bash
 python p1_analytical_vs_num.py
 ```
-
+This generates two files:
+- P1_analytical_vs_numerical.png: Plot comparing the numerical results with analytical.
+- P1_deformation.gif: Animated scene showing deformation
 #### Part 2: h and p refinement
 Scipt for h-refinement can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p2_h_refinement.py)
 ```bash
 python p2_h_refinement.py
 ```
+This generates:
+- P2_h_refinement.png: Showing convergence using h-refinement
 Script for p-refinement can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p2_p_refinement.py)
 ```bash
 python p2_p_refinement.py
 ```
+This generates:
+- P2_p_refinement.png: Showing convergence using p-refinement
 
 #### Part 3: FEA Code Failure
 Script for first example using boundary free system can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p3_free_boundaries.py)
 ```bash
 python p3_free_boundaries.py
 ```
-
+This generates:
+- P3_free_boundaries_axial_displacement_comparison.png
+- P3_free_boundaries_deformation.gif
 Script for second example using poor mesh can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p3_poor_mesh.py)
 ```bash
 python p3_poor_mesh.py
 ```
+This generates:
+- P3_poor_mesh_axial_displacement_comparison.png
+- P3_poor_mesh_deformation.gif
 
 **Note:** Please make sure to referesh "EXPLORER" to check out the plots and gifs that are generated after running the scripts.
 
@@ -96,6 +107,13 @@ Combining all three equations from above, we get:
 
 $$\frac{\partial u_x}{\partial x} = \alpha\Delta T$$
 
-Integrating both sides with respect to $x$ gives the displacement along axial ($x$) direction.
+Integrating both sides with respect to $x$ gives the displacement along axial ($x$) direction. Rest of the formulation related to writing stresses, energy, residual, etc. is exactly the same as standard practice.
+
+### Results
+
+#### Analytical vs Numerical
 
 ![Alt Text](figures/P1_analytical_vs_numerical.png)
+
+We can see that the numerical result align really close to the analytical results.
+
