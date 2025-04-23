@@ -35,5 +35,33 @@ conda activate fenicsx-env
 ```
 **Note:** If you are running into some memory related error then try relaunching the server after closing the session.
 
+### File names
+
+#### Part 1: Analytical vs Numerical
+This can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p1_analytical_vs_num.py)
+```bash
+python p1_analytical_vs_num.py
+```
+
+#### Part 2: h and p refinement
+Scipt for h-refinement can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p2_h_refinement.py)
+```bash
+python p2_h_refinement.py
+```
+Script for p-refinement can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p2_p_refinement.py)
+```bash
+python p2_p_refinement.py
+```
+
+#### Part 3: FEA Code Failure
+Script for first example using boundary free system can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p3_free_boundaries.py)
+```bash
+python p3_free_boundaries.py
+```
+
+Script for second example using poor mesh can be found [here](https://github.com/rishabh022298/ME700_Assignment4Part2/blob/main/p3_poor_mesh.py)
+```bash
+python p3_poor_mesh.py
+```
 
 ![Alt Text](figures/P1_analytical_vs_numerical.png)
