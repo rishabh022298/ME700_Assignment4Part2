@@ -122,7 +122,18 @@ Integrating both sides with respect to $x$ gives the displacement along axial ($
 
 #### Analytical vs Numerical
 
-![Alt Text](figures/P1_analytical_vs_numerical.png)
+![analytical_vs_num](figures/P1_analytical_vs_numerical.png)
 
 We can see that the numerical result align really close to the analytical results.
 
+#### h and p refinement
+
+For h-refinement study, the lateral part of the domain was discretized into 5*5 grids and the number of elements along the axial direction were varied from 1 to 20.
+
+![h_refinement](figure/P2_h_refinement.png)
+
+For p-refinement study, two element types with degree 1 and 2 were used
+- Hexahedron element
+- Tetrahedron element
+
+![p_refinement](figures/P2_p_refinement.png)
