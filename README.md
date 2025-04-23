@@ -154,7 +154,7 @@ Where $C$ is the constant of integration. FEniCS doesn't handle $C$ very well. F
 ![free_boundaries](figures/P3_free_boundaries_axial_displacement_comparison.png)
 
 Now, this one curve can be explained in one of the two ways:
-- The bar expanded symmetrically so we have expansion in both directions and hence negative and positive displacements. Or,
+- The bar expanded somewhat symmetrically so we have expansion in both directions and hence negative and positive displacements (which is untrue if we closely examine the plot). Or,
 - There were rigid body displacements.
 
 Both of these explanations are fine for understanding, but imagine if the temperature field or the body itself was not symmetric then it would be really hard to predict what actually happened. This would also lead to not only rigid body displacements but also rigid body rotations. Now imagine if we are solving something which expands over multiple time steps. Then it will be really hard to keep track of those symmetrical or asymmetrical expansions or rigid body movements or both. So, here it's not the case that FEniCS fails to solve the system or doesn't converges, but it fails to identify one of the simplest issue that may arise while solving the problems that doesn't have prescribed Dirichlet boundary conditions.
